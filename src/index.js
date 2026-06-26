@@ -3,6 +3,7 @@ export default{
         console.log(request.url);
         const { hostname, pathname } = new URL(request.url);
         const response = await fetch(`https://${hostname}${pathname}.00`);
+        return new Response(response.body, response);
         if (!response.ok) {
             return Response.redirect("https://baidu.com");
         }
