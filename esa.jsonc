@@ -1,8 +1,0 @@
-{
-  "name": "esa-storge",
-  "entry": "src/index.js",
-  "assets": {
-    "directory": "public",
-    "binding": "ASSETS"
-  }
-}
